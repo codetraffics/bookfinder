@@ -16,7 +16,7 @@ export default async function Home() {
         <section>
           <div className="flex flex-wrap space-y-10 mx-20">
             {allBooks.map((book) => (
-              <BookCard book={book} />
+              <BookCard key={Math.random() * 10} book={book} />
             ))}
           </div>
         </section>
